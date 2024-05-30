@@ -10,7 +10,7 @@ app.use(express.json());
 //app.use("/users", router);
 
 app.use("/", (req, res) => {
-  res.send("OKAY RANA GUYS");
+  res.send("OKAY RANA GUYS BETTER LUCK NEXT TIME -Añora");
 });
 
 app.listen(port, () => {
