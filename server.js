@@ -7,7 +7,11 @@ dotenv.config();
 
 app.use(express.json());
 
-app.use("/users", router);
+//app.use("/users", router);
+
+app.use("/", (req, res) => {
+  res.send("OKAY RANA GUYS");
+});
 
 app.listen(port, () => {
   console.log(`Server is ruinning on port ${port}`);
